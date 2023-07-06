@@ -20,14 +20,14 @@ let regexval = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]
 		let feedback = document.getElementById('userFeedback');
 		console.log(email);
 
-		if (name.value.length == 0) {
+		if (name.value.length == 0 | name.value.length < 2) {
           	name.style.borderColor = '#dc4d41';
         	name.classList.add('invalid');
         } else {
     		name.style.borderColor = 'transparent';
             name.classList.remove('invalid');
         }
-        if (email.value.length == 0) {
+        if (email.value.length == 0 | email.value.length < 5) {
           	email.style.borderColor = '#dc4d41';
         	email.classList.add('invalid');
         } else if(email.value.toLowerCase().match(regexval)){
@@ -39,7 +39,7 @@ let regexval = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]
         	email.style.borderColor ='#dc4d41';
          	email.classList.add('invalid');
         }
-         if (feedback.value.length == 0) {
+         if (feedback.value.length == 0 | feedback.value.length < 3) {
           	feedback.style.borderColor = '#dc4d41';
         	feedback.classList.add('invalid');
         } else { 
