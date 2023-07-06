@@ -82,12 +82,13 @@ img {
 }
 
 .site-header-address {
-
     font-style: normal;
 }
 
 .site-header-address-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .location-link {
@@ -251,12 +252,16 @@ img {
 }
 
 .site-nav {
-    position: relative;
     margin-left: 301px;
     margin-right: 195px;
 }
 
-.site-nav::before {
+.nav-list {
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav-list::before {
     position: absolute;
     top: 4px;
     left: calc(-15px - 12px);
@@ -513,6 +518,8 @@ img {
 
 .services-list {
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .services-item {
