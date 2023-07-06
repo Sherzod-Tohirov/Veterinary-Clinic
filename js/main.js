@@ -1,7 +1,7 @@
 let regexval = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       function check() {
         let elinp = document.getElementById('form-inp');
-        if (elinp.value.length == 0) {
+        if (elinp.value.length == 0 | elinp.value.length < 5) {
           elinp.style.borderColor = '#dc4d41';
           elinp.classList.add('invalid');
         } else if(elinp.value.toLowerCase().match(regexval)){
