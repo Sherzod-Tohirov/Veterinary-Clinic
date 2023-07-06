@@ -92,7 +92,7 @@ img {
 
 .location-link {
     position: relative;
-    margin-left: 191px;
+    margin-left: 216px;
     margin-right: 128px;
     padding-top: 14px;
     padding-bottom: 10px;
@@ -238,9 +238,8 @@ img {
 .logo-link {
     position: absolute;
     top: -17px;
-    left: -25px;
+    z-index: 1;
     transition: opacity 0.3s ease;
-
 }
 
 .logo-link:hover {
@@ -898,8 +897,6 @@ img {
     margin-top: 0;
     margin-bottom: 80px;
     font-size: 48px;
-    font-weight: 700;
-    line-height: 20px;
     text-align: center;
     color: #333;
 }
