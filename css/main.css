@@ -1174,11 +1174,8 @@ img {
 }
 
 .invalid {
-    border: 2px solid #dc4d41;
-}
-
-.invalid::placeholder {
     color: #dc4d41;
+    border: 2px solid #dc4d41;
 }
 
 /*callback style ends*/
